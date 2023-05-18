@@ -1,10 +1,9 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/layout';
+import FrontPage from './components/frontpage';
 
-function Home() {
-  return <div>Home</div>;
-}
+
 
 function Products() {
   return <div>Products</div>;
@@ -22,7 +21,7 @@ function App() {
     
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index element={<FrontPage />} />
           <Route path="products" element={<Products />} />
           <Route path="*" element={<RouteNotFound />} />
         </Route>
