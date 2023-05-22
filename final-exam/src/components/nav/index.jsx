@@ -3,9 +3,6 @@ import * as N from "./index.styled"
 
 const NavBar = () => {
   
-
-
-
     return (
       <nav>
         <N.List>

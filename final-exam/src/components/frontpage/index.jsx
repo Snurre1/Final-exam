@@ -4,6 +4,7 @@ import Venue from '../venue';
 import * as F from './index.styled';
 import { Link } from 'react-router-dom';
 
+
 function Frontpage() {
     const [venues, setVenues] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
@@ -62,7 +63,7 @@ function Frontpage() {
     }
     return (<>
               <F.TitleWrapper>Venues</F.TitleWrapper>
-            <Link><F.buttonStyling>Search for Venues</F.buttonStyling></Link> 
+            <Link to="/home/snurre/React/final-exam/src/components/searchVenue/index.jsx"><F.buttonStyling>Search for Venues</F.buttonStyling></Link> 
               <F.VenueWrapper>
                 {
                   venues.map((venue) => (

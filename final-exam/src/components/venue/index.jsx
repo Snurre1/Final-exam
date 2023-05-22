@@ -3,11 +3,12 @@ import * as SV from "./index.styled";
 import {Link} from "react-router-dom";
 
 
+
 function Venue({venue: {name, media, id, location}}) {
   
 
   return (
-   
+    
       <SV.VenueWrapper>
       <SV.TitleWrapper>{name}</SV.TitleWrapper>
       <SV.VenueImageContainer><SV.VenueImage src={media} alt={name}></SV.VenueImage></SV.VenueImageContainer>
