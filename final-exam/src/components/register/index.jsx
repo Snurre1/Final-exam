@@ -25,7 +25,7 @@ function Register() {
   });
 
   function onSubmit(data) {
-    console.log(data)
+    
   }
   React.useEffect(() => {
         const form = document.querySelector("#registerForm");

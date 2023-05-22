@@ -10,5 +10,6 @@ export async function registerPerson(profile) {
     method,
     body,
   });
+  // eslint-disable-next-line no-unused-vars
   const result = await response.json();
 }

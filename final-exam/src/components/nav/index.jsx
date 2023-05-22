@@ -1,21 +1,25 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import * as N from "./index.styled"
 
-function Nav() {
+const NavBar = () => {
+  
+
+
+
     return (
       <nav>
         <N.List>
           <N.LiWrapper>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </N.LiWrapper>
           <N.LiWrapper>
-            <Link to="/home/snurre/React/final-exam/src/components/register/index.jsx">Register</Link>
+            <NavLink to="/home/snurre/React/final-exam/src/components/register/index.jsx">Register</NavLink>
           </N.LiWrapper>
           <N.LiWrapper>
-            <Link to="/home/snurre/React/final-exam/src/components/login/index.jsx">Login</Link>
+            <NavLink to="/home/snurre/React/final-exam/src/components/login/index.jsx">Login</NavLink>
           </N.LiWrapper>
         </N.List>
       </nav>
     );
-  }
-export default Nav  
+    }
+export default NavBar
