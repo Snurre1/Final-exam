@@ -2,10 +2,10 @@ import NavBar from "../nav";
 import * as H from "./index.styled"
 function Header() {
     return (
-      <header>
+      <H.Header>
         <H.HeaderWrapper>YourBNB</H.HeaderWrapper>
         <NavBar />
-      </header>
+        </H.Header>
     );
   }
   export default Header

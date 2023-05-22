@@ -18,7 +18,6 @@ function SingleVenue() {
                 const response = await fetch(`${API_VENUE_URL}/${id}`);
                 const json = await response.json();
                 setData(json);
-                console.log(json)
             } catch (error) {
                 
             } finally {

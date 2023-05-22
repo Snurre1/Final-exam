@@ -12,7 +12,8 @@ padding: 5px;
 height: 500px;`
 
 export const TitleWrapper = styled.h2`
-text-align: center;`
+text-align: center;
+margin:auto;`
 
 export const CityWrapper = styled.p`
 text-align: center;

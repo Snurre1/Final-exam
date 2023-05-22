@@ -2,6 +2,7 @@ import React, { useEffect, useState }  from 'react';
 import { API_VENUE_URL } from '/home/snurre/React/final-exam/src/shared/url/url.js';
 import Venue from '../venue';
 import * as F from './index.styled';
+import { Link } from 'react-router-dom';
 
 function Frontpage() {
     const [venues, setVenues] = useState([]);
@@ -10,16 +11,15 @@ function Frontpage() {
     useEffect(() => {
         async function getVenues() {
             try {
-                setIsLoading(true)
-                setIsError(false)
-                const response = await fetch(API_VENUE_URL);
-                const json = await response.json();
-                setVenues(json);
-                console.log(json)
+              setIsLoading(true)
+              setIsError(false)
+              const response = await fetch(API_VENUE_URL);
+              const json = await response.json();
+              setVenues(json);
             } catch (error) {
-                setIsError(true);
+              setIsError(true);
             } finally {
-                setIsLoading(false);
+              setIsLoading(false);
             }
         }
         getVenues();
@@ -61,18 +61,17 @@ function Frontpage() {
         return <div>This is an error</div>
     }
     return (<>
-                <F.TitleWrapper>Venues</F.TitleWrapper>
-           <F.VenueWrapper>
-                
+              <F.TitleWrapper>Venues</F.TitleWrapper>
+            <Link><F.buttonStyling>Search for Venues</F.buttonStyling></Link> 
+              <F.VenueWrapper>
                 {
-                    venues.map((venue) => (
-                        <Venue key={venue.id} venue={venue} />
-                    ))
+                  venues.map((venue) => (
+                    <Venue key={venue.id} venue={venue} />
+                  ))
                 } 
             </F.VenueWrapper>
-            </>
-    )
-  
+          </>
+    )  
 }
 
 export default Frontpage
