@@ -23,7 +23,7 @@ export const  SearchBar = () =>{
         fetchData(value)
     }
     return(
-    <div><SBar.Straight>
+    <div><SBar.H1Straight>Search for Venues</SBar.H1Straight><SBar.Straight>
         <SBar.Search>Search</SBar.Search>
         <input value={input} onChange={(e) => handleChange(e.target.value) }></input></SBar.Straight>
         <SearchResultsList results={results}/>

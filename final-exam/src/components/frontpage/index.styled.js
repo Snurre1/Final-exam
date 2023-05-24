@@ -8,12 +8,14 @@ display: flex;
 flex-flow: row wrap;
 flex-direction: row;
 flex-wrap: wrap;
+
 align-content: flex-start;
 justify-content: center;
 align-items: flex-start;
 }`
 
-export const loadingWrapper = styled.div`* {
+export const LoadingWrapper = styled.div`* {
+	
 	border: 0;
 	box-sizing: border-box;
 	margin: 0;
@@ -33,6 +35,7 @@ body {
 	height: 100vh;
 	display: grid;
 	place-items: center;
+	
 }
 .pencil {
 	display: block;
@@ -190,7 +193,7 @@ body {
 	}
 }`
 
-export const buttonStyling = styled.button`
+export const ButtonStyling = styled.button`
 margin: 30px;
 background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
 border: 0;
@@ -214,3 +217,6 @@ white-space: nowrap;
 &:hover {
   color: black;
 }`;
+
+export const Straight = styled.div`
+text-align: center;`

@@ -26,7 +26,7 @@ function Frontpage() {
         getVenues();
     }, []);
     if (isLoading) {
-        return <F.loadingWrapper><svg className="pencil" viewBox="0 0 200 200" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
+        return <F.LoadingWrapper><svg className="pencil" viewBox="0 0 200 200" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <clipPath id="pencil-eraser">
             <rect rx="5" ry="5" width="30" height="30"></rect>
@@ -56,14 +56,14 @@ function Frontpage() {
             <polygon fill="hsl(223,10%,10%)" points="15 0,20 10,10 10" />
           </g>
         </g>
-      </svg></F.loadingWrapper>
+      </svg></F.LoadingWrapper>
     }
     if (isError) {
         return <div>This is an error</div>
     }
     return (<>
               <F.TitleWrapper>Venues</F.TitleWrapper>
-            <Link to="/home/snurre/React/final-exam/src/components/searchVenue/index.jsx"><F.buttonStyling>Search for Venues</F.buttonStyling></Link> 
+           <F.Straight> <Link to="/home/snurre/React/final-exam/src/components/searchVenue/index.jsx"><F.ButtonStyling>Search for Venues</F.ButtonStyling></Link> </F.Straight>
               <F.VenueWrapper>
                 {
                   venues.map((venue) => (

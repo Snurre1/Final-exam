@@ -1,9 +1,11 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import * as R from "../register/index.styled"
 import { registerPerson } from '../../auth/register';
+import { useNavigate } from 'react-router-dom';
+
 
 const schema = yup
   .object({
@@ -23,11 +25,20 @@ function Register() {
   } = useForm({
     resolver: yupResolver(schema),
   });
-
-  function onSubmit(data) {
-    
+  
+  const [isChecked, setIsChecked] = useState(false);
+  function toggle(value){
+    return !value;
   }
+  const navigate = useNavigate();
+
+  function handleClick(event) {
+
+    navigate('/');
+  }
+ 
   React.useEffect(() => {
+    
         const form = document.querySelector("#registerForm");
         form.addEventListener("submit", (event) => {
           event.preventDefault();
@@ -36,16 +47,15 @@ function Register() {
           const profile = Object.fromEntries(formData.entries());
           registerPerson(profile);
         
-      
     });
   }, []);
     return (
       <div>  
         <R.registerStraight> 
           <h1>Register</h1>
-        </R.registerStraight>
+          </R.registerStraight>
         <R.widthForm>
-          <form onSubmit={handleSubmit(onSubmit)} id='registerForm'>
+          <form id='registerForm'onSubmit={handleSubmit(handleClick)}>
             <label>Full Name</label>
             <input type="text" name="name" placeholder='Full Name' {...register('name')} />
             <p>{errors.name?.message}</p>
@@ -61,7 +71,7 @@ function Register() {
             <label>Venue Manager</label>
             <div>
             <label>Yes</label>
-            <input type="checkbox" {...register('venueManager')} />
+            <input type="checkbox" value={true} name='venueManager' checked={isChecked} onChange={ () => setIsChecked(toggle)} />
             </div>
             <R.buttonStyling type='submit'>Submit</R.buttonStyling>
           </form>
