@@ -1,9 +1,10 @@
 
 
+
+
 function UpdateAvatar(){
-    return(
-        <div>Update</div>
-    )
+
+    return (<div>Hello</div>)
 }
 
-export default UpdateAvatar;
+export default UpdateAvatar

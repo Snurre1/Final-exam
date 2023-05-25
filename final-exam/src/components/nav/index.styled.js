@@ -13,3 +13,4 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYA
 
 export const LiWrapper = styled.li`
 padding: 5px;`
+
