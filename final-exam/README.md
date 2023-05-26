@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+author of the loading screen = Jon Kantner. https://dev.to/jon_snow789/pure-css-pencil-preloader-255i
+
+maker of the background = Chris Smith. https://codepen.io/chris22smith/pen/pGNVwZ

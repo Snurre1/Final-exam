@@ -42,11 +42,14 @@ function Register() {
         const form = document.querySelector("#registerForm");
         form.addEventListener("submit", (event) => {
           event.preventDefault();
-          const form = event.target;
-          const formData = new FormData(form);
-          const profile = Object.fromEntries(formData.entries());
+          let name = form.name.value
+          let email = form.email.value
+          let password = form.password.value
+          let avatar = form.avatar.value
+          let MyVenue = form.venueManager.value
+          let venueManager = Boolean(MyVenue)
+          const profile = {name, email, password, avatar, venueManager}
           registerPerson(profile);
-        
     });
   }, []);
     return (

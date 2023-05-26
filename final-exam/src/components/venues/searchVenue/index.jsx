@@ -14,7 +14,6 @@ export const  SearchBar = () =>{
                 
             });
             setResults(results)
-            console.log(results)
         });
         
     }

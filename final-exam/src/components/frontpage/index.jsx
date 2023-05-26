@@ -1,6 +1,6 @@
 import React, { useEffect, useState }  from 'react';
 import { API_VENUE_URL } from '/home/snurre/React/final-exam/src/shared/url/url.js';
-import Venue from '../venue';
+import Venue from '../venues/venue';
 import * as F from './index.styled';
 import { Link } from 'react-router-dom';
 

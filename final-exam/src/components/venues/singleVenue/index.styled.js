@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const LoadingWrapper = styled.div`* {
+export const LoadingWrapper = styled.div`
+* {
 	border: 0;
 	box-sizing: border-box;
 	margin: 0;

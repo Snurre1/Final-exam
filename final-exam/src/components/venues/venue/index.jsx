@@ -4,7 +4,8 @@ import {Link} from "react-router-dom";
 
 
 
-function Venue({venue: {name, media, id, location}}) {
+
+function Venue({venue: {name, media, id, location, rating}}) {
   
 
   return (
@@ -14,7 +15,7 @@ function Venue({venue: {name, media, id, location}}) {
       <SV.VenueImageContainer><SV.VenueImage src={media} alt={name}></SV.VenueImage></SV.VenueImageContainer>
       <SV.CountryWrapper>Country: {location.country}</SV.CountryWrapper>
       <SV.CityWrapper>City: {location.city} </SV.CityWrapper>
-     <Link to={id} style={{margin: "auto"}}><SV.ViewListingBtn>View Listing</SV.ViewListingBtn></Link>
+     <Link to={id} style={{margin: "auto"}}><SV.ViewListingBtn>View Venue</SV.ViewListingBtn></Link>
       </SV.VenueWrapper> 
       
   ) 
