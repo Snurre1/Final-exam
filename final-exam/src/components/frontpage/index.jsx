@@ -63,7 +63,7 @@ function Frontpage() {
     }
     return (<>
               <F.TitleWrapper>Venues</F.TitleWrapper>
-           <F.Straight> <Link to="/home/snurre/React/final-exam/src/components/searchVenue/index.jsx"><F.ButtonStyling>Search for Venues</F.ButtonStyling></Link> </F.Straight>
+           <F.Straight> <Link to="/home/snurre/React/final-exam/src/components/venues/searchVenue/index.jsx"><F.ButtonStyling>Search for Venues</F.ButtonStyling></Link> </F.Straight>
               <F.VenueWrapper>
                 {
                   venues.map((venue) => (

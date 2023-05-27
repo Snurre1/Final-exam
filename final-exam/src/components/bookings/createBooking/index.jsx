@@ -32,25 +32,24 @@ function CreateABooking(){
       }
       
       React.useEffect(() => {
-    const form = document.getElementById("MyBooking")
+        const form = document.getElementById("MyBooking");
         form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      let dateFrom = form.dateFrom.value
-      let dateTo = form.dateTo.value
-      let guests = form.guest.value
-      let venueId = form.venueId.value
-      const booking = {dateFrom, dateTo, guests, venueId}
-      Booking(booking)
-      
-    });
-}, []);
+          event.preventDefault();
+          const form = event.target;
+          const formData = new FormData(form);
+          const book = Object.fromEntries(formData.entries());
+          Booking(book);  
+          console.log(book)    
+              
+        });
+    }, []);
     return ( 
         <div>
             <B.registerStraight>
             <h1>Make a Booking</h1>
             </B.registerStraight>  
             <B.widthForm>
-                <form id="MyBooking" onSubmit={handleSubmit()}>
+                <form id="MyBooking" onSubmit={handleSubmit(handleClick)}>
                     <label>From</label>
                     <input name="dateFrom" type="date"   {...register('datefrom')}/>
                     <p>{errors.dateFrom?.message}</p>
@@ -58,7 +57,7 @@ function CreateABooking(){
                     <input name="dateTo" type="date" {...register('dateto')}  />
                     <p>{errors.dateTo?.message}</p>
                     <label>Guests</label>
-                    <input data-type='number' type='number' name="guest" placeholder='Amount of guests'{...register('guests')}/>
+                    <input data-type='number' type='number' name="guests" placeholder='Amount of guests'{...register('guests')}/>
                     <p>{errors.guests?.message}</p>
                     <label>Id</label>
                     <input type='text' name="venueId" placeholder='Id of venue'{...register('venue')}/>

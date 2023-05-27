@@ -25,9 +25,6 @@ function NavBar() {
             <NavLink to="/home/snurre/React/final-exam/src/components/venues/createVenue/index.jsx">Create Venue</NavLink>
           </N.LiWrapper>
           <N.LiWrapper>
-            <NavLink to="/home/snurre/React/final-exam/src/components/updateAvatar/index.jsx">Update Avatar</NavLink>
-          </N.LiWrapper>
-          <N.LiWrapper>
             <NavLink to="/home/snurre/React/final-exam/src/components/bookings/createBooking/index.jsx">Create Booking</NavLink>
           </N.LiWrapper>
           <N.LiWrapper>

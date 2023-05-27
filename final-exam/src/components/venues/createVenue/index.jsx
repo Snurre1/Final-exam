@@ -46,7 +46,7 @@ function CreateAVenue(){
       let maxGuests = parseInt(myGuest)
       const venue = {name, description, price, media, maxGuests}
       CreateVenue(venue);
-      console.log(venue)
+      
     });
 }, []);
     return ( 
@@ -54,7 +54,7 @@ function CreateAVenue(){
             <h1>Make a Venue</h1>
             </C.registerStraight> 
             <C.widthForm>
-            <form id='createVenue' onSubmit={handleSubmit()}>
+            <form id='createVenue' onSubmit={handleSubmit(handleClick)}>
                 <label>Name of Venue</label>
                 <input type="text" name="name" className='venueName' placeholder='Name of Venue'{...register('name')}/>
                 <p>{errors.name?.message}</p>
@@ -68,7 +68,7 @@ function CreateAVenue(){
                 <input type="url" name="media" placeholder='Image URL' className='image'{...register('media')}/>
                 <p>{errors.media?.message}</p>
                 <label>Amount of guests</label>
-                <input data-type='number' type='number' name='maxGuests'  placeholder="Rating"{...register('maxGuests')}/>
+                <input data-type='number' type='number' name='maxGuests'  placeholder="Guests"{...register('maxGuests')}/>
                 <p>{errors.rating?.message}</p>
                 <C.buttonStyling type='submit'>Submit</C.buttonStyling>
             </form>

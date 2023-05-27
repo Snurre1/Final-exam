@@ -8,7 +8,7 @@ export async function updateProfile(profileData) {
     throw new Error("Update requires a name");
   }
 
-  const updateProfileURL = `${API_PROFILE_URL}/${profileData.name}`;
+  const updateProfileURL = `${API_PROFILE_URL}/${profileData.name}/media`;
   const response = await authFetch(updateProfileURL, {
     method,
     body: JSON.stringify(profileData),
