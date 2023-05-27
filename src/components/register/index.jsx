@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-import * as R from "../register/index.styled"
+import * as R from "./index.styled"
 import { registerPerson } from '../../auth/register';
 import { useNavigate } from 'react-router-dom';
 

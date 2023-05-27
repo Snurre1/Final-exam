@@ -1,5 +1,5 @@
 import React, { useEffect, useState }  from 'react';
-import { API_VENUE_URL } from '/home/snurre/React/final-exam/src/shared/url/url.js';
+import { API_VENUE_URL } from '../../shared/url/url.js';
 import Venue from '../venues/venue';
 import * as F from './index.styled';
 import { Link } from 'react-router-dom';
@@ -63,7 +63,7 @@ function Frontpage() {
     }
     return (<>
               <F.TitleWrapper>Venues</F.TitleWrapper>
-           <F.Straight> <Link to="/home/snurre/React/final-exam/src/components/venues/searchVenue/index.jsx"><F.ButtonStyling>Search for Venues</F.ButtonStyling></Link> </F.Straight>
+           <F.Straight> <Link to="/home/snurre/React/src/components/venues/searchVenue/index.jsx"><F.ButtonStyling>Search for Venues</F.ButtonStyling></Link> </F.Straight>
               <F.VenueWrapper>
                 {
                   venues.map((venue) => (

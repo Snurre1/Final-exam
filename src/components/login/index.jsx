@@ -1,5 +1,5 @@
 import React from 'react';
-import * as L from "../login/index.styled"
+import * as L from "./index.styled"
 import { loginPerson } from '../../auth/login';
 import { useNavigate } from 'react-router-dom';
 import { yupResolver } from '@hookform/resolvers/yup';

@@ -20,12 +20,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Frontpage />} />
-          <Route path="/home/snurre/React/final-exam/src/components/register/index.jsx" element={<Register />} />
-          <Route path="/home/snurre/React/final-exam/src/components/login/index.jsx" element={<Login />} />
+          <Route path="/home/snurre/React/src/components/register/index.jsx" element={<Register />} />
+          <Route path="/home/snurre/React/src/components/login/index.jsx" element={<Login />} />
           <Route path="/:id" element={<SingleVenue />} />
-          <Route path="/home/snurre/React/final-exam/src/components/venues/createVenue/index.jsx" element={<CreateAVenue />} />
-          <Route path="/home/snurre/React/final-exam/src/components/venues/searchVenue/index.jsx" element={<SearchBar />} />
-          <Route path="/home/snurre/React/final-exam/src/components/bookings/createBooking/index.jsx" element={<CreateABooking/>}/>
+          <Route path="/home/snurre/React/src/components/venues/createVenue/index.jsx" element={<CreateAVenue />} />
+          <Route path="/home/snurre/React/src/components/venues/searchVenue/index.jsx" element={<SearchBar />} />
+          <Route path="/home/snurre/React/src/components/bookings/createBooking/index.jsx" element={<CreateABooking/>}/>
           <Route path="*" element={<RouteNotFound />} />
         </Route>
       </Routes>

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { API_VENUE_URL } from '/home/snurre/React/final-exam/src/shared/url/url.js';
+import { API_VENUE_URL } from '../../../shared/url/url.js';
 import * as Single from './index.styled';
 
 

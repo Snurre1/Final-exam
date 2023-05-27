@@ -16,16 +16,16 @@ function NavBar() {
             <NavLink to="/">Home</NavLink>
           </N.LiWrapper>
           <N.LiWrapper>
-            <NavLink to="/home/snurre/React/final-exam/src/components/register/index.jsx">Register</NavLink>
+            <NavLink to="/home/snurre/React/src/components/register/index.jsx">Register</NavLink>
           </N.LiWrapper>
           <N.LiWrapper>
-            <NavLink to="/home/snurre/React/final-exam/src/components/login/index.jsx">Login</NavLink>
+            <NavLink to="/home/snurre/React/src/components/login/index.jsx">Login</NavLink>
           </N.LiWrapper>
           <N.LiWrapper>
-            <NavLink to="/home/snurre/React/final-exam/src/components/venues/createVenue/index.jsx">Create Venue</NavLink>
+            <NavLink to="/home/snurre/React/src/components/venues/createVenue/index.jsx">Create Venue</NavLink>
           </N.LiWrapper>
           <N.LiWrapper>
-            <NavLink to="/home/snurre/React/final-exam/src/components/bookings/createBooking/index.jsx">Create Booking</NavLink>
+            <NavLink to="/home/snurre/React/src/components/bookings/createBooking/index.jsx">Create Booking</NavLink>
           </N.LiWrapper>
           <N.LiWrapper>
             <NavLink to="/"onClick={Logout}>Logout</NavLink>

@@ -1,7 +1,7 @@
 import React from "react";
 import * as SBar from './index.styled'
 import { useState } from "react";
-import { API_VENUE_URL } from '/home/snurre/React/final-exam/src/shared/url/url.js';
+import { API_VENUE_URL } from '../../../shared/url/url.js';
 import  { SearchResultsList } from "../searchbarvenuelist";
 
 export const  SearchBar = () =>{
