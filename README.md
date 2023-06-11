@@ -1,4 +1,4 @@
-#Final exam
+# Final exam
 
 This was my final exam at Noroff, making a site with React and styled components.
 
